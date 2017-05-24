@@ -64,6 +64,7 @@ public class Simulator {
 					this.surgeSatisfiedClient(g);
 					Event ev = new Event(e.getTime()+g.getDurata(), g, EventType.OUT_GRUPPO);
 					queue.add(ev);
+					break;
 				}
 			}
 		}
@@ -106,6 +107,7 @@ public class Simulator {
 					if(t.getGruppo().equals(g)){
 						t.setStatus(TavoloStatus.TAVOlO_LIBERO);
 						t.setGruppo(null);
+						break;
 					}
 				}
 			}
